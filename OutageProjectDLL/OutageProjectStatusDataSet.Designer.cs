@@ -20,17 +20,17 @@ namespace OutageProjectDLL {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("OutageProjectsDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("OutageProjectStatusDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class OutageProjectsDataSet : global::System.Data.DataSet {
+    public partial class OutageProjectStatusDataSet : global::System.Data.DataSet {
         
-        private outageprojectsDataTable tableoutageprojects;
+        private outageprojectstatusDataTable tableoutageprojectstatus;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public OutageProjectsDataSet() {
+        public OutageProjectStatusDataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace OutageProjectDLL {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected OutageProjectsDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected OutageProjectStatusDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace OutageProjectDLL {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["outageprojects"] != null)) {
-                    base.Tables.Add(new outageprojectsDataTable(ds.Tables["outageprojects"]));
+                if ((ds.Tables["outageprojectstatus"] != null)) {
+                    base.Tables.Add(new outageprojectstatusDataTable(ds.Tables["outageprojectstatus"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace OutageProjectDLL {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public outageprojectsDataTable outageprojects {
+        public outageprojectstatusDataTable outageprojectstatus {
             get {
-                return this.tableoutageprojects;
+                return this.tableoutageprojectstatus;
             }
         }
         
@@ -127,7 +127,7 @@ namespace OutageProjectDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            OutageProjectsDataSet cln = ((OutageProjectsDataSet)(base.Clone()));
+            OutageProjectStatusDataSet cln = ((OutageProjectStatusDataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace OutageProjectDLL {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["outageprojects"] != null)) {
-                    base.Tables.Add(new outageprojectsDataTable(ds.Tables["outageprojects"]));
+                if ((ds.Tables["outageprojectstatus"] != null)) {
+                    base.Tables.Add(new outageprojectstatusDataTable(ds.Tables["outageprojectstatus"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace OutageProjectDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableoutageprojects = ((outageprojectsDataTable)(base.Tables["outageprojects"]));
+            this.tableoutageprojectstatus = ((outageprojectstatusDataTable)(base.Tables["outageprojectstatus"]));
             if ((initTable == true)) {
-                if ((this.tableoutageprojects != null)) {
-                    this.tableoutageprojects.InitVars();
+                if ((this.tableoutageprojectstatus != null)) {
+                    this.tableoutageprojectstatus.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace OutageProjectDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "OutageProjectsDataSet";
+            this.DataSetName = "OutageProjectStatusDataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/OutageProjectsDataSet.xsd";
+            this.Namespace = "http://tempuri.org/OutageProjectStatusDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableoutageprojects = new outageprojectsDataTable();
-            base.Tables.Add(this.tableoutageprojects);
+            this.tableoutageprojectstatus = new outageprojectstatusDataTable();
+            base.Tables.Add(this.tableoutageprojectstatus);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeoutageprojects() {
+        private bool ShouldSerializeoutageprojectstatus() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace OutageProjectDLL {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            OutageProjectsDataSet ds = new OutageProjectsDataSet();
+            OutageProjectStatusDataSet ds = new OutageProjectStatusDataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,14 +270,14 @@ namespace OutageProjectDLL {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void outageprojectsRowChangeEventHandler(object sender, outageprojectsRowChangeEvent e);
+        public delegate void outageprojectstatusRowChangeEventHandler(object sender, outageprojectstatusRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class outageprojectsDataTable : global::System.Data.TypedTableBase<outageprojectsRow> {
+        public partial class outageprojectstatusDataTable : global::System.Data.TypedTableBase<outageprojectstatusRow> {
             
             private global::System.Data.DataColumn columnTransactionID;
             
@@ -289,28 +289,12 @@ namespace OutageProjectDLL {
             
             private global::System.Data.DataColumn columnModifiedUser;
             
-            private global::System.Data.DataColumn columnOutageDate;
-            
-            private global::System.Data.DataColumn columnTempDID;
-            
-            private global::System.Data.DataColumn columnProjectID;
-            
-            private global::System.Data.DataColumn columnOutageAddress1;
-            
-            private global::System.Data.DataColumn columnOutageAddress2;
-            
-            private global::System.Data.DataColumn columnOutageCity;
-            
-            private global::System.Data.DataColumn columnOutageState;
-            
-            private global::System.Data.DataColumn columnOutagePostalCode;
-            
-            private global::System.Data.DataColumn columnOutageStatus;
+            private global::System.Data.DataColumn columnOutageWorkStatus;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public outageprojectsDataTable() {
-                this.TableName = "outageprojects";
+            public outageprojectstatusDataTable() {
+                this.TableName = "outageprojectstatus";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -318,7 +302,7 @@ namespace OutageProjectDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal outageprojectsDataTable(global::System.Data.DataTable table) {
+            internal outageprojectstatusDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -335,7 +319,7 @@ namespace OutageProjectDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected outageprojectsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected outageprojectstatusDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -382,73 +366,9 @@ namespace OutageProjectDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OutageDateColumn {
+            public global::System.Data.DataColumn OutageWorkStatusColumn {
                 get {
-                    return this.columnOutageDate;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TempDIDColumn {
-                get {
-                    return this.columnTempDID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ProjectIDColumn {
-                get {
-                    return this.columnProjectID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OutageAddress1Column {
-                get {
-                    return this.columnOutageAddress1;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OutageAddress2Column {
-                get {
-                    return this.columnOutageAddress2;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OutageCityColumn {
-                get {
-                    return this.columnOutageCity;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OutageStateColumn {
-                get {
-                    return this.columnOutageState;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OutagePostalCodeColumn {
-                get {
-                    return this.columnOutagePostalCode;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn OutageStatusColumn {
-                get {
-                    return this.columnOutageStatus;
+                    return this.columnOutageWorkStatus;
                 }
             }
             
@@ -463,65 +383,57 @@ namespace OutageProjectDLL {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public outageprojectsRow this[int index] {
+            public outageprojectstatusRow this[int index] {
                 get {
-                    return ((outageprojectsRow)(this.Rows[index]));
+                    return ((outageprojectstatusRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event outageprojectsRowChangeEventHandler outageprojectsRowChanging;
+            public event outageprojectstatusRowChangeEventHandler outageprojectstatusRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event outageprojectsRowChangeEventHandler outageprojectsRowChanged;
+            public event outageprojectstatusRowChangeEventHandler outageprojectstatusRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event outageprojectsRowChangeEventHandler outageprojectsRowDeleting;
+            public event outageprojectstatusRowChangeEventHandler outageprojectstatusRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event outageprojectsRowChangeEventHandler outageprojectsRowDeleted;
+            public event outageprojectstatusRowChangeEventHandler outageprojectstatusRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddoutageprojectsRow(outageprojectsRow row) {
+            public void AddoutageprojectstatusRow(outageprojectstatusRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public outageprojectsRow AddoutageprojectsRow(System.DateTime CreatedDate, string CreatedUser, System.DateTime ModifiedDate, string ModifiedUser, System.DateTime OutageDate, string TempDID, int ProjectID, string OutageAddress1, string OutageAddress2, string OutageCity, string OutageState, string OutagePostalCode, string OutageStatus) {
-                outageprojectsRow rowoutageprojectsRow = ((outageprojectsRow)(this.NewRow()));
+            public outageprojectstatusRow AddoutageprojectstatusRow(System.DateTime CreatedDate, string CreatedUser, System.DateTime ModifiedDate, string ModifiedUser, string OutageWorkStatus) {
+                outageprojectstatusRow rowoutageprojectstatusRow = ((outageprojectstatusRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         CreatedDate,
                         CreatedUser,
                         ModifiedDate,
                         ModifiedUser,
-                        OutageDate,
-                        TempDID,
-                        ProjectID,
-                        OutageAddress1,
-                        OutageAddress2,
-                        OutageCity,
-                        OutageState,
-                        OutagePostalCode,
-                        OutageStatus};
-                rowoutageprojectsRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowoutageprojectsRow);
-                return rowoutageprojectsRow;
+                        OutageWorkStatus};
+                rowoutageprojectstatusRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowoutageprojectstatusRow);
+                return rowoutageprojectstatusRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public outageprojectsRow FindByTransactionID(int TransactionID) {
-                return ((outageprojectsRow)(this.Rows.Find(new object[] {
+            public outageprojectstatusRow FindByTransactionID(int TransactionID) {
+                return ((outageprojectstatusRow)(this.Rows.Find(new object[] {
                             TransactionID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                outageprojectsDataTable cln = ((outageprojectsDataTable)(base.Clone()));
+                outageprojectstatusDataTable cln = ((outageprojectstatusDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -529,7 +441,7 @@ namespace OutageProjectDLL {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new outageprojectsDataTable();
+                return new outageprojectstatusDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -540,15 +452,7 @@ namespace OutageProjectDLL {
                 this.columnCreatedUser = base.Columns["CreatedUser"];
                 this.columnModifiedDate = base.Columns["ModifiedDate"];
                 this.columnModifiedUser = base.Columns["ModifiedUser"];
-                this.columnOutageDate = base.Columns["OutageDate"];
-                this.columnTempDID = base.Columns["TempDID"];
-                this.columnProjectID = base.Columns["ProjectID"];
-                this.columnOutageAddress1 = base.Columns["OutageAddress1"];
-                this.columnOutageAddress2 = base.Columns["OutageAddress2"];
-                this.columnOutageCity = base.Columns["OutageCity"];
-                this.columnOutageState = base.Columns["OutageState"];
-                this.columnOutagePostalCode = base.Columns["OutagePostalCode"];
-                this.columnOutageStatus = base.Columns["OutageStatus"];
+                this.columnOutageWorkStatus = base.Columns["OutageWorkStatus"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -564,24 +468,8 @@ namespace OutageProjectDLL {
                 base.Columns.Add(this.columnModifiedDate);
                 this.columnModifiedUser = new global::System.Data.DataColumn("ModifiedUser", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnModifiedUser);
-                this.columnOutageDate = new global::System.Data.DataColumn("OutageDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOutageDate);
-                this.columnTempDID = new global::System.Data.DataColumn("TempDID", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTempDID);
-                this.columnProjectID = new global::System.Data.DataColumn("ProjectID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProjectID);
-                this.columnOutageAddress1 = new global::System.Data.DataColumn("OutageAddress1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOutageAddress1);
-                this.columnOutageAddress2 = new global::System.Data.DataColumn("OutageAddress2", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOutageAddress2);
-                this.columnOutageCity = new global::System.Data.DataColumn("OutageCity", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOutageCity);
-                this.columnOutageState = new global::System.Data.DataColumn("OutageState", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOutageState);
-                this.columnOutagePostalCode = new global::System.Data.DataColumn("OutagePostalCode", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOutagePostalCode);
-                this.columnOutageStatus = new global::System.Data.DataColumn("OutageStatus", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOutageStatus);
+                this.columnOutageWorkStatus = new global::System.Data.DataColumn("OutageWorkStatus", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOutageWorkStatus);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnTransactionID}, true));
                 this.columnTransactionID.AutoIncrement = true;
@@ -594,47 +482,33 @@ namespace OutageProjectDLL {
                 this.columnCreatedUser.AllowDBNull = false;
                 this.columnCreatedUser.MaxLength = 200;
                 this.columnModifiedUser.MaxLength = 200;
-                this.columnOutageDate.AllowDBNull = false;
-                this.columnTempDID.AllowDBNull = false;
-                this.columnTempDID.MaxLength = 2147483647;
-                this.columnProjectID.AllowDBNull = false;
-                this.columnOutageAddress1.AllowDBNull = false;
-                this.columnOutageAddress1.MaxLength = 2147483647;
-                this.columnOutageAddress2.MaxLength = 2147483647;
-                this.columnOutageCity.AllowDBNull = false;
-                this.columnOutageCity.MaxLength = 200;
-                this.columnOutageState.AllowDBNull = false;
-                this.columnOutageState.MaxLength = 50;
-                this.columnOutagePostalCode.AllowDBNull = false;
-                this.columnOutagePostalCode.MaxLength = 50;
-                this.columnOutageStatus.AllowDBNull = false;
-                this.columnOutageStatus.MaxLength = 200;
+                this.columnOutageWorkStatus.MaxLength = 200;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public outageprojectsRow NewoutageprojectsRow() {
-                return ((outageprojectsRow)(this.NewRow()));
+            public outageprojectstatusRow NewoutageprojectstatusRow() {
+                return ((outageprojectstatusRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new outageprojectsRow(builder);
+                return new outageprojectstatusRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(outageprojectsRow);
+                return typeof(outageprojectstatusRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.outageprojectsRowChanged != null)) {
-                    this.outageprojectsRowChanged(this, new outageprojectsRowChangeEvent(((outageprojectsRow)(e.Row)), e.Action));
+                if ((this.outageprojectstatusRowChanged != null)) {
+                    this.outageprojectstatusRowChanged(this, new outageprojectstatusRowChangeEvent(((outageprojectstatusRow)(e.Row)), e.Action));
                 }
             }
             
@@ -642,8 +516,8 @@ namespace OutageProjectDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.outageprojectsRowChanging != null)) {
-                    this.outageprojectsRowChanging(this, new outageprojectsRowChangeEvent(((outageprojectsRow)(e.Row)), e.Action));
+                if ((this.outageprojectstatusRowChanging != null)) {
+                    this.outageprojectstatusRowChanging(this, new outageprojectstatusRowChangeEvent(((outageprojectstatusRow)(e.Row)), e.Action));
                 }
             }
             
@@ -651,8 +525,8 @@ namespace OutageProjectDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.outageprojectsRowDeleted != null)) {
-                    this.outageprojectsRowDeleted(this, new outageprojectsRowChangeEvent(((outageprojectsRow)(e.Row)), e.Action));
+                if ((this.outageprojectstatusRowDeleted != null)) {
+                    this.outageprojectstatusRowDeleted(this, new outageprojectstatusRowChangeEvent(((outageprojectstatusRow)(e.Row)), e.Action));
                 }
             }
             
@@ -660,14 +534,14 @@ namespace OutageProjectDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.outageprojectsRowDeleting != null)) {
-                    this.outageprojectsRowDeleting(this, new outageprojectsRowChangeEvent(((outageprojectsRow)(e.Row)), e.Action));
+                if ((this.outageprojectstatusRowDeleting != null)) {
+                    this.outageprojectstatusRowDeleting(this, new outageprojectstatusRowChangeEvent(((outageprojectstatusRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveoutageprojectsRow(outageprojectsRow row) {
+            public void RemoveoutageprojectstatusRow(outageprojectstatusRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -676,7 +550,7 @@ namespace OutageProjectDLL {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                OutageProjectsDataSet ds = new OutageProjectsDataSet();
+                OutageProjectStatusDataSet ds = new OutageProjectStatusDataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -694,7 +568,7 @@ namespace OutageProjectDLL {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "outageprojectsDataTable";
+                attribute2.FixedValue = "outageprojectstatusDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -738,25 +612,25 @@ namespace OutageProjectDLL {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class outageprojectsRow : global::System.Data.DataRow {
+        public partial class outageprojectstatusRow : global::System.Data.DataRow {
             
-            private outageprojectsDataTable tableoutageprojects;
+            private outageprojectstatusDataTable tableoutageprojectstatus;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal outageprojectsRow(global::System.Data.DataRowBuilder rb) : 
+            internal outageprojectstatusRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableoutageprojects = ((outageprojectsDataTable)(this.Table));
+                this.tableoutageprojectstatus = ((outageprojectstatusDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int TransactionID {
                 get {
-                    return ((int)(this[this.tableoutageprojects.TransactionIDColumn]));
+                    return ((int)(this[this.tableoutageprojectstatus.TransactionIDColumn]));
                 }
                 set {
-                    this[this.tableoutageprojects.TransactionIDColumn] = value;
+                    this[this.tableoutageprojectstatus.TransactionIDColumn] = value;
                 }
             }
             
@@ -764,10 +638,10 @@ namespace OutageProjectDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public System.DateTime CreatedDate {
                 get {
-                    return ((global::System.DateTime)(this[this.tableoutageprojects.CreatedDateColumn]));
+                    return ((global::System.DateTime)(this[this.tableoutageprojectstatus.CreatedDateColumn]));
                 }
                 set {
-                    this[this.tableoutageprojects.CreatedDateColumn] = value;
+                    this[this.tableoutageprojectstatus.CreatedDateColumn] = value;
                 }
             }
             
@@ -775,10 +649,10 @@ namespace OutageProjectDLL {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string CreatedUser {
                 get {
-                    return ((string)(this[this.tableoutageprojects.CreatedUserColumn]));
+                    return ((string)(this[this.tableoutageprojectstatus.CreatedUserColumn]));
                 }
                 set {
-                    this[this.tableoutageprojects.CreatedUserColumn] = value;
+                    this[this.tableoutageprojectstatus.CreatedUserColumn] = value;
                 }
             }
             
@@ -787,14 +661,14 @@ namespace OutageProjectDLL {
             public System.DateTime ModifiedDate {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableoutageprojects.ModifiedDateColumn]));
+                        return ((global::System.DateTime)(this[this.tableoutageprojectstatus.ModifiedDateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ModifiedDate\' in table \'outageprojects\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ModifiedDate\' in table \'outageprojectstatus\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableoutageprojects.ModifiedDateColumn] = value;
+                    this[this.tableoutageprojectstatus.ModifiedDateColumn] = value;
                 }
             }
             
@@ -803,155 +677,68 @@ namespace OutageProjectDLL {
             public string ModifiedUser {
                 get {
                     try {
-                        return ((string)(this[this.tableoutageprojects.ModifiedUserColumn]));
+                        return ((string)(this[this.tableoutageprojectstatus.ModifiedUserColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ModifiedUser\' in table \'outageprojects\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ModifiedUser\' in table \'outageprojectstatus\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableoutageprojects.ModifiedUserColumn] = value;
+                    this[this.tableoutageprojectstatus.ModifiedUserColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public System.DateTime OutageDate {
-                get {
-                    return ((global::System.DateTime)(this[this.tableoutageprojects.OutageDateColumn]));
-                }
-                set {
-                    this[this.tableoutageprojects.OutageDateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string TempDID {
-                get {
-                    return ((string)(this[this.tableoutageprojects.TempDIDColumn]));
-                }
-                set {
-                    this[this.tableoutageprojects.TempDIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int ProjectID {
-                get {
-                    return ((int)(this[this.tableoutageprojects.ProjectIDColumn]));
-                }
-                set {
-                    this[this.tableoutageprojects.ProjectIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OutageAddress1 {
-                get {
-                    return ((string)(this[this.tableoutageprojects.OutageAddress1Column]));
-                }
-                set {
-                    this[this.tableoutageprojects.OutageAddress1Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OutageAddress2 {
+            public string OutageWorkStatus {
                 get {
                     try {
-                        return ((string)(this[this.tableoutageprojects.OutageAddress2Column]));
+                        return ((string)(this[this.tableoutageprojectstatus.OutageWorkStatusColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OutageAddress2\' in table \'outageprojects\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'OutageWorkStatus\' in table \'outageprojectstatus\' is DBNull." +
+                                "", e);
                     }
                 }
                 set {
-                    this[this.tableoutageprojects.OutageAddress2Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OutageCity {
-                get {
-                    return ((string)(this[this.tableoutageprojects.OutageCityColumn]));
-                }
-                set {
-                    this[this.tableoutageprojects.OutageCityColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OutageState {
-                get {
-                    return ((string)(this[this.tableoutageprojects.OutageStateColumn]));
-                }
-                set {
-                    this[this.tableoutageprojects.OutageStateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OutagePostalCode {
-                get {
-                    return ((string)(this[this.tableoutageprojects.OutagePostalCodeColumn]));
-                }
-                set {
-                    this[this.tableoutageprojects.OutagePostalCodeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string OutageStatus {
-                get {
-                    return ((string)(this[this.tableoutageprojects.OutageStatusColumn]));
-                }
-                set {
-                    this[this.tableoutageprojects.OutageStatusColumn] = value;
+                    this[this.tableoutageprojectstatus.OutageWorkStatusColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsModifiedDateNull() {
-                return this.IsNull(this.tableoutageprojects.ModifiedDateColumn);
+                return this.IsNull(this.tableoutageprojectstatus.ModifiedDateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetModifiedDateNull() {
-                this[this.tableoutageprojects.ModifiedDateColumn] = global::System.Convert.DBNull;
+                this[this.tableoutageprojectstatus.ModifiedDateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsModifiedUserNull() {
-                return this.IsNull(this.tableoutageprojects.ModifiedUserColumn);
+                return this.IsNull(this.tableoutageprojectstatus.ModifiedUserColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetModifiedUserNull() {
-                this[this.tableoutageprojects.ModifiedUserColumn] = global::System.Convert.DBNull;
+                this[this.tableoutageprojectstatus.ModifiedUserColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsOutageAddress2Null() {
-                return this.IsNull(this.tableoutageprojects.OutageAddress2Column);
+            public bool IsOutageWorkStatusNull() {
+                return this.IsNull(this.tableoutageprojectstatus.OutageWorkStatusColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetOutageAddress2Null() {
-                this[this.tableoutageprojects.OutageAddress2Column] = global::System.Convert.DBNull;
+            public void SetOutageWorkStatusNull() {
+                this[this.tableoutageprojectstatus.OutageWorkStatusColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -959,22 +746,22 @@ namespace OutageProjectDLL {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class outageprojectsRowChangeEvent : global::System.EventArgs {
+        public class outageprojectstatusRowChangeEvent : global::System.EventArgs {
             
-            private outageprojectsRow eventRow;
+            private outageprojectstatusRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public outageprojectsRowChangeEvent(outageprojectsRow row, global::System.Data.DataRowAction action) {
+            public outageprojectstatusRowChangeEvent(outageprojectstatusRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public outageprojectsRow Row {
+            public outageprojectstatusRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -990,7 +777,7 @@ namespace OutageProjectDLL {
         }
     }
 }
-namespace OutageProjectDLL.OutageProjectsDataSetTableAdapters {
+namespace OutageProjectDLL.OutageProjectStatusDataSetTableAdapters {
     
     
     /// <summary>
@@ -1002,7 +789,7 @@ namespace OutageProjectDLL.OutageProjectsDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class outageprojectsTableAdapter : global::System.ComponentModel.Component {
+    public partial class outageprojectstatusTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -1016,7 +803,7 @@ namespace OutageProjectDLL.OutageProjectsDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public outageprojectsTableAdapter() {
+        public outageprojectstatusTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1113,25 +900,17 @@ namespace OutageProjectDLL.OutageProjectsDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "outageprojects";
+            tableMapping.DataSetTable = "outageprojectstatus";
             tableMapping.ColumnMappings.Add("TransactionID", "TransactionID");
             tableMapping.ColumnMappings.Add("CreatedDate", "CreatedDate");
             tableMapping.ColumnMappings.Add("CreatedUser", "CreatedUser");
             tableMapping.ColumnMappings.Add("ModifiedDate", "ModifiedDate");
             tableMapping.ColumnMappings.Add("ModifiedUser", "ModifiedUser");
-            tableMapping.ColumnMappings.Add("OutageDate", "OutageDate");
-            tableMapping.ColumnMappings.Add("TempDID", "TempDID");
-            tableMapping.ColumnMappings.Add("ProjectID", "ProjectID");
-            tableMapping.ColumnMappings.Add("OutageAddress1", "OutageAddress1");
-            tableMapping.ColumnMappings.Add("OutageAddress2", "OutageAddress2");
-            tableMapping.ColumnMappings.Add("OutageCity", "OutageCity");
-            tableMapping.ColumnMappings.Add("OutageState", "OutageState");
-            tableMapping.ColumnMappings.Add("OutagePostalCode", "OutagePostalCode");
-            tableMapping.ColumnMappings.Add("OutageStatus", "OutageStatus");
+            tableMapping.ColumnMappings.Add("OutageWorkStatus", "OutageWorkStatus");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[outageprojects] WHERE (([TransactionID] = @Original_TransactionID) AND ([CreatedDate] = @Original_CreatedDate) AND ([CreatedUser] = @Original_CreatedUser) AND ((@IsNull_ModifiedDate = 1 AND [ModifiedDate] IS NULL) OR ([ModifiedDate] = @Original_ModifiedDate)) AND ((@IsNull_ModifiedUser = 1 AND [ModifiedUser] IS NULL) OR ([ModifiedUser] = @Original_ModifiedUser)) AND ([OutageDate] = @Original_OutageDate) AND ([ProjectID] = @Original_ProjectID) AND ([OutageCity] = @Original_OutageCity) AND ([OutageState] = @Original_OutageState) AND ([OutagePostalCode] = @Original_OutagePostalCode) AND ([OutageStatus] = @Original_OutageStatus))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[outageprojectstatus] WHERE (([TransactionID] = @Original_TransactionID) AND ([CreatedDate] = @Original_CreatedDate) AND ([CreatedUser] = @Original_CreatedUser) AND ((@IsNull_ModifiedDate = 1 AND [ModifiedDate] IS NULL) OR ([ModifiedDate] = @Original_ModifiedDate)) AND ((@IsNull_ModifiedUser = 1 AND [ModifiedUser] IS NULL) OR ([ModifiedUser] = @Original_ModifiedUser)) AND ((@IsNull_OutageWorkStatus = 1 AND [OutageWorkStatus] IS NULL) OR ([OutageWorkStatus] = @Original_OutageWorkStatus)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TransactionID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CreatedDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CreatedDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1140,48 +919,28 @@ namespace OutageProjectDLL.OutageProjectsDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ModifiedDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ModifiedDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ModifiedUser", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ModifiedUser", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ModifiedUser", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ModifiedUser", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutageDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProjectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutageCity", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageCity", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutageState", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageState", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutagePostalCode", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutagePostalCode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutageStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OutageWorkStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageWorkStatus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutageWorkStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageWorkStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[outageprojects] ([CreatedDate], [CreatedUser], [ModifiedDate], [ModifiedUser], [OutageDate], [TempDID], [ProjectID], [OutageAddress1], [OutageAddress2], [OutageCity], [OutageState], [OutagePostalCode], [OutageStatus]) VALUES (@CreatedDate, @CreatedUser, @ModifiedDate, @ModifiedUser, @OutageDate, @TempDID, @ProjectID, @OutageAddress1, @OutageAddress2, @OutageCity, @OutageState, @OutagePostalCode, @OutageStatus);
-SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, OutageDate, TempDID, ProjectID, OutageAddress1, OutageAddress2, OutageCity, OutageState, OutagePostalCode, OutageStatus FROM outageprojects WHERE (TransactionID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[outageprojectstatus] ([CreatedDate], [CreatedUser], [ModifiedDate], [ModifiedUser], [OutageWorkStatus]) VALUES (@CreatedDate, @CreatedUser, @ModifiedDate, @ModifiedUser, @OutageWorkStatus);
+SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, OutageWorkStatus FROM outageprojectstatus WHERE (TransactionID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CreatedDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CreatedDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CreatedUser", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CreatedUser", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ModifiedDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ModifiedDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ModifiedUser", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ModifiedUser", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TempDID", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TempDID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageAddress1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageAddress1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageAddress2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageAddress2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageCity", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageCity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageState", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageState", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutagePostalCode", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutagePostalCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageWorkStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageWorkStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[outageprojects] SET [CreatedDate] = @CreatedDate, [CreatedUser] = @CreatedUser, [ModifiedDate] = @ModifiedDate, [ModifiedUser] = @ModifiedUser, [OutageDate] = @OutageDate, [TempDID] = @TempDID, [ProjectID] = @ProjectID, [OutageAddress1] = @OutageAddress1, [OutageAddress2] = @OutageAddress2, [OutageCity] = @OutageCity, [OutageState] = @OutageState, [OutagePostalCode] = @OutagePostalCode, [OutageStatus] = @OutageStatus WHERE (([TransactionID] = @Original_TransactionID) AND ([CreatedDate] = @Original_CreatedDate) AND ([CreatedUser] = @Original_CreatedUser) AND ((@IsNull_ModifiedDate = 1 AND [ModifiedDate] IS NULL) OR ([ModifiedDate] = @Original_ModifiedDate)) AND ((@IsNull_ModifiedUser = 1 AND [ModifiedUser] IS NULL) OR ([ModifiedUser] = @Original_ModifiedUser)) AND ([OutageDate] = @Original_OutageDate) AND ([ProjectID] = @Original_ProjectID) AND ([OutageCity] = @Original_OutageCity) AND ([OutageState] = @Original_OutageState) AND ([OutagePostalCode] = @Original_OutagePostalCode) AND ([OutageStatus] = @Original_OutageStatus));
-SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, OutageDate, TempDID, ProjectID, OutageAddress1, OutageAddress2, OutageCity, OutageState, OutagePostalCode, OutageStatus FROM outageprojects WHERE (TransactionID = @TransactionID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[outageprojectstatus] SET [CreatedDate] = @CreatedDate, [CreatedUser] = @CreatedUser, [ModifiedDate] = @ModifiedDate, [ModifiedUser] = @ModifiedUser, [OutageWorkStatus] = @OutageWorkStatus WHERE (([TransactionID] = @Original_TransactionID) AND ([CreatedDate] = @Original_CreatedDate) AND ([CreatedUser] = @Original_CreatedUser) AND ((@IsNull_ModifiedDate = 1 AND [ModifiedDate] IS NULL) OR ([ModifiedDate] = @Original_ModifiedDate)) AND ((@IsNull_ModifiedUser = 1 AND [ModifiedUser] IS NULL) OR ([ModifiedUser] = @Original_ModifiedUser)) AND ((@IsNull_OutageWorkStatus = 1 AND [OutageWorkStatus] IS NULL) OR ([OutageWorkStatus] = @Original_OutageWorkStatus)));
+SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, OutageWorkStatus FROM outageprojectstatus WHERE (TransactionID = @TransactionID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CreatedDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CreatedDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CreatedUser", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CreatedUser", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ModifiedDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ModifiedDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ModifiedUser", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ModifiedUser", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TempDID", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TempDID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ProjectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageAddress1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageAddress1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageAddress2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageAddress2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageCity", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageCity", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageState", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageState", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutagePostalCode", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutagePostalCode", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OutageWorkStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageWorkStatus", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TransactionID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CreatedDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CreatedDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CreatedUser", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CreatedUser", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1189,12 +948,8 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ModifiedDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ModifiedDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ModifiedUser", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ModifiedUser", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ModifiedUser", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ModifiedUser", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutageDate", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ProjectID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ProjectID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutageCity", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageCity", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutageState", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageState", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutagePostalCode", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutagePostalCode", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutageStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OutageWorkStatus", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageWorkStatus", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OutageWorkStatus", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OutageWorkStatus", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TransactionID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "TransactionID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -1212,8 +967,7 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outag" +
-                "eDate, TempDID, ProjectID, OutageAddress1, OutageAddress2, OutageCity, OutageSta" +
-                "te, OutagePostalCode, OutageStatus FROM dbo.outageprojects";
+                "eWorkStatus FROM dbo.outageprojectstatus";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1221,7 +975,7 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(OutageProjectsDataSet.outageprojectsDataTable dataTable) {
+        public virtual int Fill(OutageProjectStatusDataSet.outageprojectstatusDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1234,9 +988,9 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual OutageProjectsDataSet.outageprojectsDataTable GetData() {
+        public virtual OutageProjectStatusDataSet.outageprojectstatusDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            OutageProjectsDataSet.outageprojectsDataTable dataTable = new OutageProjectsDataSet.outageprojectsDataTable();
+            OutageProjectStatusDataSet.outageprojectstatusDataTable dataTable = new OutageProjectStatusDataSet.outageprojectstatusDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1244,15 +998,15 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(OutageProjectsDataSet.outageprojectsDataTable dataTable) {
+        public virtual int Update(OutageProjectStatusDataSet.outageprojectstatusDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(OutageProjectsDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "outageprojects");
+        public virtual int Update(OutageProjectStatusDataSet dataSet) {
+            return this.Adapter.Update(dataSet, "outageprojectstatus");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1274,7 +1028,7 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_TransactionID, System.DateTime Original_CreatedDate, string Original_CreatedUser, global::System.Nullable<global::System.DateTime> Original_ModifiedDate, string Original_ModifiedUser, System.DateTime Original_OutageDate, int Original_ProjectID, string Original_OutageCity, string Original_OutageState, string Original_OutagePostalCode, string Original_OutageStatus) {
+        public virtual int Delete(int Original_TransactionID, System.DateTime Original_CreatedDate, string Original_CreatedUser, global::System.Nullable<global::System.DateTime> Original_ModifiedDate, string Original_ModifiedUser, string Original_OutageWorkStatus) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_TransactionID));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((System.DateTime)(Original_CreatedDate));
             if ((Original_CreatedUser == null)) {
@@ -1299,31 +1053,13 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_ModifiedUser));
             }
-            this.Adapter.DeleteCommand.Parameters[7].Value = ((System.DateTime)(Original_OutageDate));
-            this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_ProjectID));
-            if ((Original_OutageCity == null)) {
-                throw new global::System.ArgumentNullException("Original_OutageCity");
+            if ((Original_OutageWorkStatus == null)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((string)(Original_OutageCity));
-            }
-            if ((Original_OutageState == null)) {
-                throw new global::System.ArgumentNullException("Original_OutageState");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_OutageState));
-            }
-            if ((Original_OutagePostalCode == null)) {
-                throw new global::System.ArgumentNullException("Original_OutagePostalCode");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[11].Value = ((string)(Original_OutagePostalCode));
-            }
-            if ((Original_OutageStatus == null)) {
-                throw new global::System.ArgumentNullException("Original_OutageStatus");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[12].Value = ((string)(Original_OutageStatus));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_OutageWorkStatus));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1345,7 +1081,7 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(System.DateTime CreatedDate, string CreatedUser, global::System.Nullable<global::System.DateTime> ModifiedDate, string ModifiedUser, System.DateTime OutageDate, string TempDID, int ProjectID, string OutageAddress1, string OutageAddress2, string OutageCity, string OutageState, string OutagePostalCode, string OutageStatus) {
+        public virtual int Insert(System.DateTime CreatedDate, string CreatedUser, global::System.Nullable<global::System.DateTime> ModifiedDate, string ModifiedUser, string OutageWorkStatus) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(CreatedDate));
             if ((CreatedUser == null)) {
                 throw new global::System.ArgumentNullException("CreatedUser");
@@ -1365,49 +1101,11 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((string)(ModifiedUser));
             }
-            this.Adapter.InsertCommand.Parameters[4].Value = ((System.DateTime)(OutageDate));
-            if ((TempDID == null)) {
-                throw new global::System.ArgumentNullException("TempDID");
+            if ((OutageWorkStatus == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(TempDID));
-            }
-            this.Adapter.InsertCommand.Parameters[6].Value = ((int)(ProjectID));
-            if ((OutageAddress1 == null)) {
-                throw new global::System.ArgumentNullException("OutageAddress1");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(OutageAddress1));
-            }
-            if ((OutageAddress2 == null)) {
-                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(OutageAddress2));
-            }
-            if ((OutageCity == null)) {
-                throw new global::System.ArgumentNullException("OutageCity");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(OutageCity));
-            }
-            if ((OutageState == null)) {
-                throw new global::System.ArgumentNullException("OutageState");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(OutageState));
-            }
-            if ((OutagePostalCode == null)) {
-                throw new global::System.ArgumentNullException("OutagePostalCode");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(OutagePostalCode));
-            }
-            if ((OutageStatus == null)) {
-                throw new global::System.ArgumentNullException("OutageStatus");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(OutageStatus));
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(OutageWorkStatus));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1429,32 +1127,7 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    System.DateTime CreatedDate, 
-                    string CreatedUser, 
-                    global::System.Nullable<global::System.DateTime> ModifiedDate, 
-                    string ModifiedUser, 
-                    System.DateTime OutageDate, 
-                    string TempDID, 
-                    int ProjectID, 
-                    string OutageAddress1, 
-                    string OutageAddress2, 
-                    string OutageCity, 
-                    string OutageState, 
-                    string OutagePostalCode, 
-                    string OutageStatus, 
-                    int Original_TransactionID, 
-                    System.DateTime Original_CreatedDate, 
-                    string Original_CreatedUser, 
-                    global::System.Nullable<global::System.DateTime> Original_ModifiedDate, 
-                    string Original_ModifiedUser, 
-                    System.DateTime Original_OutageDate, 
-                    int Original_ProjectID, 
-                    string Original_OutageCity, 
-                    string Original_OutageState, 
-                    string Original_OutagePostalCode, 
-                    string Original_OutageStatus, 
-                    int TransactionID) {
+        public virtual int Update(System.DateTime CreatedDate, string CreatedUser, global::System.Nullable<global::System.DateTime> ModifiedDate, string ModifiedUser, string OutageWorkStatus, int Original_TransactionID, System.DateTime Original_CreatedDate, string Original_CreatedUser, global::System.Nullable<global::System.DateTime> Original_ModifiedDate, string Original_ModifiedUser, string Original_OutageWorkStatus, int TransactionID) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(CreatedDate));
             if ((CreatedUser == null)) {
                 throw new global::System.ArgumentNullException("CreatedUser");
@@ -1474,101 +1147,45 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(ModifiedUser));
             }
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((System.DateTime)(OutageDate));
-            if ((TempDID == null)) {
-                throw new global::System.ArgumentNullException("TempDID");
+            if ((OutageWorkStatus == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(TempDID));
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(OutageWorkStatus));
             }
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(ProjectID));
-            if ((OutageAddress1 == null)) {
-                throw new global::System.ArgumentNullException("OutageAddress1");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(OutageAddress1));
-            }
-            if ((OutageAddress2 == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(OutageAddress2));
-            }
-            if ((OutageCity == null)) {
-                throw new global::System.ArgumentNullException("OutageCity");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(OutageCity));
-            }
-            if ((OutageState == null)) {
-                throw new global::System.ArgumentNullException("OutageState");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(OutageState));
-            }
-            if ((OutagePostalCode == null)) {
-                throw new global::System.ArgumentNullException("OutagePostalCode");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(OutagePostalCode));
-            }
-            if ((OutageStatus == null)) {
-                throw new global::System.ArgumentNullException("OutageStatus");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(OutageStatus));
-            }
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_TransactionID));
-            this.Adapter.UpdateCommand.Parameters[14].Value = ((System.DateTime)(Original_CreatedDate));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_TransactionID));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((System.DateTime)(Original_CreatedDate));
             if ((Original_CreatedUser == null)) {
                 throw new global::System.ArgumentNullException("Original_CreatedUser");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_CreatedUser));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_CreatedUser));
             }
             if ((Original_ModifiedDate.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((System.DateTime)(Original_ModifiedDate.Value));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((System.DateTime)(Original_ModifiedDate.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             if ((Original_ModifiedUser == null)) {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((string)(Original_ModifiedUser));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_ModifiedUser));
             }
-            this.Adapter.UpdateCommand.Parameters[20].Value = ((System.DateTime)(Original_OutageDate));
-            this.Adapter.UpdateCommand.Parameters[21].Value = ((int)(Original_ProjectID));
-            if ((Original_OutageCity == null)) {
-                throw new global::System.ArgumentNullException("Original_OutageCity");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((string)(Original_OutageCity));
-            }
-            if ((Original_OutageState == null)) {
-                throw new global::System.ArgumentNullException("Original_OutageState");
+            if ((Original_OutageWorkStatus == null)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[23].Value = ((string)(Original_OutageState));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_OutageWorkStatus));
             }
-            if ((Original_OutagePostalCode == null)) {
-                throw new global::System.ArgumentNullException("Original_OutagePostalCode");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(Original_OutagePostalCode));
-            }
-            if ((Original_OutageStatus == null)) {
-                throw new global::System.ArgumentNullException("Original_OutageStatus");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[25].Value = ((string)(Original_OutageStatus));
-            }
-            this.Adapter.UpdateCommand.Parameters[26].Value = ((int)(TransactionID));
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(TransactionID));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1589,32 +1206,8 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(
-                    System.DateTime CreatedDate, 
-                    string CreatedUser, 
-                    global::System.Nullable<global::System.DateTime> ModifiedDate, 
-                    string ModifiedUser, 
-                    System.DateTime OutageDate, 
-                    string TempDID, 
-                    int ProjectID, 
-                    string OutageAddress1, 
-                    string OutageAddress2, 
-                    string OutageCity, 
-                    string OutageState, 
-                    string OutagePostalCode, 
-                    string OutageStatus, 
-                    int Original_TransactionID, 
-                    System.DateTime Original_CreatedDate, 
-                    string Original_CreatedUser, 
-                    global::System.Nullable<global::System.DateTime> Original_ModifiedDate, 
-                    string Original_ModifiedUser, 
-                    System.DateTime Original_OutageDate, 
-                    int Original_ProjectID, 
-                    string Original_OutageCity, 
-                    string Original_OutageState, 
-                    string Original_OutagePostalCode, 
-                    string Original_OutageStatus) {
-            return this.Update(CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, OutageDate, TempDID, ProjectID, OutageAddress1, OutageAddress2, OutageCity, OutageState, OutagePostalCode, OutageStatus, Original_TransactionID, Original_CreatedDate, Original_CreatedUser, Original_ModifiedDate, Original_ModifiedUser, Original_OutageDate, Original_ProjectID, Original_OutageCity, Original_OutageState, Original_OutagePostalCode, Original_OutageStatus, Original_TransactionID);
+        public virtual int Update(System.DateTime CreatedDate, string CreatedUser, global::System.Nullable<global::System.DateTime> ModifiedDate, string ModifiedUser, string OutageWorkStatus, int Original_TransactionID, System.DateTime Original_CreatedDate, string Original_CreatedUser, global::System.Nullable<global::System.DateTime> Original_ModifiedDate, string Original_ModifiedUser, string Original_OutageWorkStatus) {
+            return this.Update(CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, OutageWorkStatus, Original_TransactionID, Original_CreatedDate, Original_CreatedUser, Original_ModifiedDate, Original_ModifiedUser, Original_OutageWorkStatus, Original_TransactionID);
         }
     }
     
@@ -1630,7 +1223,7 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         
         private UpdateOrderOption _updateOrder;
         
-        private outageprojectsTableAdapter _outageprojectsTableAdapter;
+        private outageprojectstatusTableAdapter _outageprojectstatusTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1652,12 +1245,12 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public outageprojectsTableAdapter outageprojectsTableAdapter {
+        public outageprojectstatusTableAdapter outageprojectstatusTableAdapter {
             get {
-                return this._outageprojectsTableAdapter;
+                return this._outageprojectstatusTableAdapter;
             }
             set {
-                this._outageprojectsTableAdapter = value;
+                this._outageprojectstatusTableAdapter = value;
             }
         }
         
@@ -1680,9 +1273,9 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._outageprojectsTableAdapter != null) 
-                            && (this._outageprojectsTableAdapter.Connection != null))) {
-                    return this._outageprojectsTableAdapter.Connection;
+                if (((this._outageprojectstatusTableAdapter != null) 
+                            && (this._outageprojectstatusTableAdapter.Connection != null))) {
+                    return this._outageprojectstatusTableAdapter.Connection;
                 }
                 return null;
             }
@@ -1697,7 +1290,7 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._outageprojectsTableAdapter != null)) {
+                if ((this._outageprojectstatusTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -1709,14 +1302,14 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(OutageProjectsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(OutageProjectStatusDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._outageprojectsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.outageprojects.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._outageprojectstatusTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.outageprojectstatus.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._outageprojectsTableAdapter.Update(updatedRows));
+                    result = (result + this._outageprojectstatusTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -1728,13 +1321,13 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(OutageProjectsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(OutageProjectStatusDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._outageprojectsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.outageprojects.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._outageprojectstatusTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.outageprojectstatus.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._outageprojectsTableAdapter.Update(addedRows));
+                    result = (result + this._outageprojectstatusTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -1746,13 +1339,13 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(OutageProjectsDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(OutageProjectStatusDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._outageprojectsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.outageprojects.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._outageprojectstatusTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.outageprojectstatus.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._outageprojectsTableAdapter.Update(deletedRows));
+                    result = (result + this._outageprojectstatusTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -1788,15 +1381,15 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(OutageProjectsDataSet dataSet) {
+        public virtual int UpdateAll(OutageProjectStatusDataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._outageprojectsTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._outageprojectsTableAdapter.Connection) == false))) {
+            if (((this._outageprojectstatusTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._outageprojectstatusTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -1832,13 +1425,13 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._outageprojectsTableAdapter != null)) {
-                    revertConnections.Add(this._outageprojectsTableAdapter, this._outageprojectsTableAdapter.Connection);
-                    this._outageprojectsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._outageprojectsTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._outageprojectsTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._outageprojectsTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._outageprojectsTableAdapter.Adapter);
+                if ((this._outageprojectstatusTableAdapter != null)) {
+                    revertConnections.Add(this._outageprojectstatusTableAdapter, this._outageprojectstatusTableAdapter.Connection);
+                    this._outageprojectstatusTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._outageprojectstatusTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._outageprojectstatusTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._outageprojectstatusTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._outageprojectstatusTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -1899,9 +1492,9 @@ SELECT TransactionID, CreatedDate, CreatedUser, ModifiedDate, ModifiedUser, Outa
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._outageprojectsTableAdapter != null)) {
-                    this._outageprojectsTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._outageprojectsTableAdapter]));
-                    this._outageprojectsTableAdapter.Transaction = null;
+                if ((this._outageprojectstatusTableAdapter != null)) {
+                    this._outageprojectstatusTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._outageprojectstatusTableAdapter]));
+                    this._outageprojectstatusTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

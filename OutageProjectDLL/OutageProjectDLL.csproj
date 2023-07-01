@@ -44,10 +44,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FindOutageProjectByWorkStatusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindOutageProjectByWorkStatusDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindSortedOutageProjectWorkStatusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindSortedOutageProjectWorkStatusDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="InsertOutageProjectEntry.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>InsertOutageProjectEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsertOutageProjectStatusEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InsertOutageProjectStatusEntry.xsd</DependentUpon>
     </Compile>
     <Compile Include="OutageProjectClass.cs" />
     <Compile Include="OutageProjectsDataSet.Designer.cs">
@@ -55,15 +70,57 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OutageProjectsDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="OutageProjectStatusDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutageProjectStatusDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="UpdateOutageProjectDIDEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateOutageProjectDIDEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateOutageProjectStatusEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateOutageProjectStatusEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateOutageProjectWorkStatusTableEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpdateOutageProjectWorkStatusTableEntry.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="FindOutageProjectByWorkStatusDataSet.xsc">
+      <DependentUpon>FindOutageProjectByWorkStatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOutageProjectByWorkStatusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindOutageProjectByWorkStatusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindOutageProjectByWorkStatusDataSet.xss">
+      <DependentUpon>FindOutageProjectByWorkStatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindSortedOutageProjectWorkStatusDataSet.xsc">
+      <DependentUpon>FindSortedOutageProjectWorkStatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindSortedOutageProjectWorkStatusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindSortedOutageProjectWorkStatusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindSortedOutageProjectWorkStatusDataSet.xss">
+      <DependentUpon>FindSortedOutageProjectWorkStatusDataSet.xsd</DependentUpon>
+    </None>
     <None Include="InsertOutageProjectEntry.xsc">
       <DependentUpon>InsertOutageProjectEntry.xsd</DependentUpon>
     </None>
@@ -74,6 +131,17 @@
     </None>
     <None Include="InsertOutageProjectEntry.xss">
       <DependentUpon>InsertOutageProjectEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertOutageProjectStatusEntry.xsc">
+      <DependentUpon>InsertOutageProjectStatusEntry.xsd</DependentUpon>
+    </None>
+    <None Include="InsertOutageProjectStatusEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InsertOutageProjectStatusEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InsertOutageProjectStatusEntry.xss">
+      <DependentUpon>InsertOutageProjectStatusEntry.xsd</DependentUpon>
     </None>
     <None Include="OutageProjectsDataSet.xsc">
       <DependentUpon>OutageProjectsDataSet.xsd</DependentUpon>
@@ -86,9 +154,53 @@
     <None Include="OutageProjectsDataSet.xss">
       <DependentUpon>OutageProjectsDataSet.xsd</DependentUpon>
     </None>
+    <None Include="OutageProjectStatusDataSet.xsc">
+      <DependentUpon>OutageProjectStatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OutageProjectStatusDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OutageProjectStatusDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OutageProjectStatusDataSet.xss">
+      <DependentUpon>OutageProjectStatusDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="UpdateOutageProjectDIDEntry.xsc">
+      <DependentUpon>UpdateOutageProjectDIDEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateOutageProjectDIDEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateOutageProjectDIDEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateOutageProjectDIDEntry.xss">
+      <DependentUpon>UpdateOutageProjectDIDEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateOutageProjectStatusEntry.xsc">
+      <DependentUpon>UpdateOutageProjectStatusEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateOutageProjectStatusEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateOutageProjectStatusEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateOutageProjectStatusEntry.xss">
+      <DependentUpon>UpdateOutageProjectStatusEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateOutageProjectWorkStatusTableEntry.xsc">
+      <DependentUpon>UpdateOutageProjectWorkStatusTableEntry.xsd</DependentUpon>
+    </None>
+    <None Include="UpdateOutageProjectWorkStatusTableEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpdateOutageProjectWorkStatusTableEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpdateOutageProjectWorkStatusTableEntry.xss">
+      <DependentUpon>UpdateOutageProjectWorkStatusTableEntry.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
