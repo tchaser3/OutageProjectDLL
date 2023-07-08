@@ -49,6 +49,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FindOutageProjectByWorkStatusDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FindOutageStatusByKeywordDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindOutageStatusByKeywordDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindSortedOutageProjectWorkStatusDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,6 +114,17 @@
     </None>
     <None Include="FindOutageProjectByWorkStatusDataSet.xss">
       <DependentUpon>FindOutageProjectByWorkStatusDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOutageStatusByKeywordDataSet.xsc">
+      <DependentUpon>FindOutageStatusByKeywordDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOutageStatusByKeywordDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindOutageStatusByKeywordDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindOutageStatusByKeywordDataSet.xss">
+      <DependentUpon>FindOutageStatusByKeywordDataSet.xsd</DependentUpon>
     </None>
     <None Include="FindSortedOutageProjectWorkStatusDataSet.xsc">
       <DependentUpon>FindSortedOutageProjectWorkStatusDataSet.xsd</DependentUpon>
