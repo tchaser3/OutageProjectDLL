@@ -36,6 +36,23 @@ namespace OutageProjectDLL
         FindOutageStatusByKeywordDataSet aFindOutageStatusByKeywordDataSet;
         FindOutageStatusByKeywordDataSetTableAdapters.FindOutageWorkStatusByKeywordTableAdapter aFindOutageStatusByKeywordTableAdapter;
 
+        FindOutageProjectsDataSet aFindOutageProjectsDataSet;
+        FindOutageProjectsDataSetTableAdapters.FindOutageProjectsTableAdapter aFindOutageProjectsTableAdapter;
+
+        public FindOutageProjectsDataSet FindOutageProjects()
+        {
+            try
+            {
+                aFindOutageProjectsDataSet = new FindOutageProjectsDataSet();
+                aFindOutageProjectsTableAdapter = new FindOutageProjectsDataSetTableAdapters.FindOutageProjectsTableAdapter();
+                aFindOutageProjectsTableAdapter.Fill(aFindOutageProjectsDataSet.FindOutageProjects);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Outage Project Class // Find Outage Projects " + Ex.ToString());
+            }
+            return aFindOutageProjectsDataSet;
+        }
         public FindOutageStatusByKeywordDataSet FindOutageStatusByKeyword(string strOutageProjectStatus)
         {
             try
