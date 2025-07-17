@@ -44,6 +44,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeleteOutageProjectEntry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeleteOutageProjectEntry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindOutageProjectByProjectIDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindOutageProjectByProjectIDDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FindOutageProjectByWorkStatusDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,6 +119,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="DeleteOutageProjectEntry.xsc">
+      <DependentUpon>DeleteOutageProjectEntry.xsd</DependentUpon>
+    </None>
+    <None Include="DeleteOutageProjectEntry.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeleteOutageProjectEntry.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DeleteOutageProjectEntry.xss">
+      <DependentUpon>DeleteOutageProjectEntry.xsd</DependentUpon>
+    </None>
+    <None Include="FindOutageProjectByProjectIDDataSet.xsc">
+      <DependentUpon>FindOutageProjectByProjectIDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindOutageProjectByProjectIDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindOutageProjectByProjectIDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindOutageProjectByProjectIDDataSet.xss">
+      <DependentUpon>FindOutageProjectByProjectIDDataSet.xsd</DependentUpon>
+    </None>
     <None Include="FindOutageProjectByWorkStatusDataSet.xsc">
       <DependentUpon>FindOutageProjectByWorkStatusDataSet.xsd</DependentUpon>
     </None>

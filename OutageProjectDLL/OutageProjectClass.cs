@@ -39,6 +39,42 @@ namespace OutageProjectDLL
         FindOutageProjectsDataSet aFindOutageProjectsDataSet;
         FindOutageProjectsDataSetTableAdapters.FindOutageProjectsTableAdapter aFindOutageProjectsTableAdapter;
 
+        DeleteOutageProjectEntryTableAdapters.QueriesTableAdapter aDeleteOutageProjectTableAdapter;
+
+        FindOutageProjectByProjectIDDataSet aFindOutageProjectByProjectIDDataSet;
+        FindOutageProjectByProjectIDDataSetTableAdapters.FindOutageProjectByProjectIDTableAdapter aFindOutageProjectByProjectIDTableAdapter;
+
+        public FindOutageProjectByProjectIDDataSet FindOutageProjectByProjectID(int intProject)
+        {
+            try
+            {
+                aFindOutageProjectByProjectIDDataSet = new FindOutageProjectByProjectIDDataSet();
+                aFindOutageProjectByProjectIDTableAdapter = new FindOutageProjectByProjectIDDataSetTableAdapters.FindOutageProjectByProjectIDTableAdapter();
+                aFindOutageProjectByProjectIDTableAdapter.Fill(aFindOutageProjectByProjectIDDataSet.FindOutageProjectByProjectID, intProject);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Outage Project Class // Find Outage Project By Project ID " + Ex.ToString());
+            }
+            return aFindOutageProjectByProjectIDDataSet;
+        }
+        public bool DeleteOutageProject(int intProjectID)
+        {
+            bool blnFatalError = false;
+
+            try
+            {
+                aDeleteOutageProjectTableAdapter = new DeleteOutageProjectEntryTableAdapters.QueriesTableAdapter();
+                aDeleteOutageProjectTableAdapter.DeleteOutageProject(intProjectID);
+            }
+            catch (Exception Ex)
+            {
+                TheEventLogClass.InsertEventLogEntry(DateTime.Now, "Outage Project Class // Delete Outage Project " + Ex.ToString());
+                blnFatalError = true;   
+            }
+
+            return blnFatalError;
+        }
         public FindOutageProjectsDataSet FindOutageProjects()
         {
             try
